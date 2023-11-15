@@ -1,6 +1,7 @@
 ﻿using ClickLib.Clicks;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Hooking;
+using Dalamud.Logging;
 using ECommons.DalamudServices;
 using FFXIVClientStructs.FFXIV.Client.Game;
 using FFXIVClientStructs.FFXIV.Client.Game.Control;
@@ -90,7 +91,7 @@ namespace Saucy.CuffACur
                             //    }
                             //}
 
-                            if (slidingNode->Width >= 210 && slidingNode->Width <= 240)
+                            if (slidingNode->Width >= 215 && slidingNode->Width <= 230)
                             {
                                 var evt = stackalloc AtkEvent[]
                                 {
